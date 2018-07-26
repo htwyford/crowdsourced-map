@@ -49,7 +49,7 @@ html, body {
     "body";
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .wrapper {
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
