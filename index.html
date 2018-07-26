@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Read The World Challenge Map</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://maps.google.com/maps/api/js?v=3&libraries=places"></script>
+</head>
+
+<body onload="initMap()">
+  <div class="wrapper">
+    <div class="header">
+      <div id="logo"></div>
+    </div>
+    <div class="sidebar">
+      <script type="text/javascript">let submitted = false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location.reload(true);}"></iframe>
+      <h2>Add a book to the map</h2>
+      <form id="bookForm" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdFkJEK3DSftPGEv_SGAsfWN1qyKTP2ZQQAkKPKq4dTDdn8Yw/formResponse" 
+        target="hidden_iframe" onsubmit="submitted=true;">
+        <div class="book-input">
+          <label for="yourname" aria-describedby="yourname_desk">Your Name</label>
+          <div class="form-tip" id="yourname_desc">Anyone will be able to see this name. Be careful of what you share!</div>
+          <input id="yourname" aria-label="Your Name" aria-describedby="yourname_desc" name="entry.436076865" >
+        </div>
+
+        <div class="book-input">
+          <label for="booktitle">Book Title<span class="required"> *</span></label>
+          <input required id="booktitle" aria-label="Book Title" name="entry.875795117" required>
+        </div>
+
+        <div class="book-input">
+          <label for="author">Author</label>
+          <input id="author" aria-label="Author" name="entry.1154998837">
+        </div>
+
+        <div class="book-input">
+          <label for="location" aria-describedby="location_desc">Location<span class="required"> *</span></label>
+          <div class="form-tip" id="location_desc">Enter a country, province/state, city, address, or anywhere in the world!</div>
+          <input id="location" type="text" aria-label="Location" aria-describedby="location_desc" name="entry.15913076" required>
+        </div>
+
+        <div class="book-input">
+          <input id="latitude" name="entry.639277696" type="hidden">
+        </div>
+        <div class="book-input">
+          <input id="longitude" name="entry.1685072742" type="hidden">
+        </div>
+        <button id="submitBook">Submit</button>
+      </form>
+    </div>
+    <div class="body">
+      <div id="map_canvas"></div>
+    </div>
+  </div>
+</body>
+<script src="scripts/markerclusterer.js"></script>
+<script src="scripts/map.js"></script>
+</html>
