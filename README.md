@@ -44,6 +44,22 @@ suit your use case, but you must include "Location", "Latitude", and
 `crowdsourced-map` is easiest to use if you pick three custom fields in
 addition to the Location/Latitude/Longitude fields. With that said, you can use
 any number of fields with some editing.
+If you use a corporate Google account, make sure that your form can be filled 
+by someone outside your organization. Do this by clicking the gear icon on the
+Edit Form page and unchecking the appropriate box.
 > ### Forget about how it looks!
 > Don't worry about the Latitude/Longitude fields or how the Google Form looks;
 > the user will never see them.
+
+2. __Set up your Google Sheet__
+Once your Google Form is complete, make sure it is publishing its results to
+a Google Sheet. You can find the Sheet by clicking on the _Responses_ tab of
+the Edit Form page and clicking the green Sheets icon.
+Once the Sheet is open, go to File > Publish to Web... and click Publish.
+Close the Publish box and click the Share button at the top right. Turn
+link sharing on, and make sure "Anyone with the link **can view** is selected.
+Make a note of the link and in particular the spreadsheet ID. The spreadsheet ID
+is the long alphanumeric code betqween `/d/` and `/edit`. For instance, if your
+sharable link is
+https://docs.google.com/spreadsheets/d/1MkdonOT3oP4ofwgM_9DL3njkBNrcValWMt-X-WKveDI/edit?usp=sharing,
+the spreadsheet ID is 1MkdonOT3oP4ofwgM_9DL3njkBNrcValWMt-X-WKveDI.
