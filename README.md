@@ -32,4 +32,18 @@ but you will need one by the time you publish the app.
 > Removing malicious entries is easy, but please be aware of the risk.
 
 ## Walkthrough
-Coming soon! :)
+1. __Set up your Google Form__
+To begin using `crowdsourced-map`, you need to set up the Google Form that will
+serve as the back-end for the app. 
+Create a new Google Form in Google Drive and add the fields you would like users
+to be able to enter. The original `crowdsourced-map` allowed users to enter 
+their own name, the name of a book they read, the author of that book, and
+finally a "Location" field for the book's setting. You can pick whatever fields
+suit your use case, but you must include "Location", "Latitude", and
+"Longitude" fields.
+`crowdsourced-map` is easiest to use if you pick three custom fields in
+addition to the Location/Latitude/Longitude fields. With that said, you can use
+any number of fields with some editing.
+> ### Forget about how it looks!
+> Don't worry about the Latitude/Longitude fields or how the Google Form looks;
+> the user will never see them.
