@@ -101,11 +101,6 @@ function initMap() {
           } 
         }
       }
-
-    // Add a marker clusterer to manage the markers.
-     let markerCluster = new MarkerClusterer(map, markers,
-      {imagePath: 'images/m'});
-
     } else {
       console.error("Error fetching spreadsheet data.");
     }
