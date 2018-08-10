@@ -36,6 +36,7 @@ but you will need one by the time you publish the app.
 If you're familar with Git, clone this repo.
 If you're not, click _Clone or Download_, `Download ZIP`, then unzip the
 downloaded file.
+Delete the `docs` folder.
 2. __Set up your Google Form__
 To begin using `crowdsourced-map`, you need to set up the Google Form that will
 serve as the back-end for the app. 
@@ -67,7 +68,6 @@ is the long alphanumeric code betqween `/d/` and `/edit`. For instance, if your
 sharable link is
 https://docs.google.com/spreadsheets/d/1MkdonOT3oP4ofwgM_9DL3njkBNrcValWMt-X-WKveDI/edit?usp=sharing,
 the spreadsheet ID is 1MkdonOT3oP4ofwgM_9DL3njkBNrcValWMt-X-WKveDI. 
-
 In your copy of `crowdsourced-map`, add the spreadsheet ID to the 
 `const spreadsheetID = ` line in `scripts/map.js`.
 
@@ -79,15 +79,13 @@ Most modern developer tools place an icon that resembles a cursor entering a box
 in the top-left corner of the window. Click that icon, and then click on one of
 the text boxes on your Form. The developer tools will highlight the code behind 
 that text box. Here is an example:
-[img](docs/form_cursor_example.png)
-
+![form cursor example](https://github.com/htwyford/crowdsourced-map/blob/docs/docs/form_cursor_example.png)
 In the line of code highlighted, make a note of the value for `name=`. In the 
 screenshot above, it is `entry.870886307`. Repeat this for every input on 
 the form.
-
 Finally, search in the developer tools inspector for `/formResponse`. A URL will
 be highlighted. Take a note of this URL.
-[img](docs/form_response_example.png)
+![form response example](https://github.com/htwyford/crowdsourced-map/blob/docs/docs/form_response_example.png)
 
 5. __Input your Form data into your website__
 You will now use the data you gathered in step 4 to make `crowdsourced-map` come
@@ -98,7 +96,6 @@ the `/formResponse` URL you gathered in step 4.
 `<div class="book-input">` tags. Replace the `name=` value on the `<input>` tag
 in the block with the corresponding `entry.XXXXXXXXX` value you grabbed in 
 step 4. Take this take to update the text in the input's `<label>` as well.
-
 At this point, you should have a __functioning application__. Just open the
 `index.html` file in a web browser, and you should be able to add values to the
 map. That said, some map features will be disabled since you have not yet gotten
@@ -109,25 +106,23 @@ Follow step 1 of [Google's tutorial](https://developers.google.com/maps/document
 on acquiring an API key.
 Once you have your API key, open `index.html`. Add your key to line 9, remove 
 line 8 above, and remove the comment symbols (<!-- -->) around line 9.
-
 Your site is now complete!
 
 7. __Distribute your site__
 If you work in an environment with a systems adminstrator or IT person, give 
 them your copy of the `crowdsourced-map` folder. 
-
 The simplest way to distribute your site without outside help is to simply send
 your users a copy of the `crowdsourced-map` folder. This is admittedly low-tech,
 but is useful for testing or deploying your site to very small groups of friends
 or colleagues.
-
 The easiest method to publish your site "for real" is to use GitHub Pages.
 This process begins with uploading your copy of `crowdsourced-map` to GitHub.
 A full explanation of how to do this or how to configure GitHub Pages is 
 beyond the scope of this tutorial, but GitHub offers a 
 [Help Centre](https://help.github.com/categories/github-pages-basics/)
 with instructions, and many tutorials can be found online.
---------------
+
+
 This concludes the walkthrough. If you get stuck, or have outstanding questions,
 feel free to email me at [harry.a.twyford@gmail.com](mailto:harry.a.twyford@gmail.com). 
 I am glad to improve the quality of the code or tutorial offered here.
