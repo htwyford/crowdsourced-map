@@ -38,6 +38,7 @@ If you're familar with Git, clone this repo.
 If you're not, click _Clone or Download_, `Download ZIP`, then unzip the
 downloaded file.
 Delete the `docs` folder.
+
 2. __Set up your Google Form__
 
 To begin using `crowdsourced-map`, you need to set up the Google Form that will
