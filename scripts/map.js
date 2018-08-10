@@ -1,10 +1,10 @@
 
-// ID of the Google Spreadsheet. Real value REQUIRED.
-let spreadsheetID = "1MkdonOT3oP4ofwgM_9DL3njkBNrcValWMt-X-WKveDI";
+// ID of the Google Spreadsheet. Replace this value with your ID.
+const spreadsheetID = "1MkdonOT3oP4ofwgM_9DL3njkBNrcValWMt-X-WKveDI";
 
 // A link to a Google Sheets JSON access point
 // Make sure it is public or set to Anyone with link can view.
-let DATA_SERVICE_URL = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/default/public/values?alt=json";
+const DATA_SERVICE_URL = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/default/public/values?alt=json";
 let info;
 let map;
 
@@ -114,6 +114,7 @@ function initMap() {
   request.send();
 }
 
+// Focus map to the most recently-added pin.
 window.addEventListener("load", function () {
   function sendData() {
     let a = document.querySelector('input#location').value;
@@ -144,7 +145,6 @@ window.addEventListener("load", function () {
   // ...and take over its submit event.
   form.addEventListener("submit", function (event) {
     event.preventDefault();
-
     sendData();
   });
 });

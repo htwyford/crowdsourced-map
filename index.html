@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Crowdsourced Map Demo</title>
   <link rel="stylesheet" href="styles/main.css">
+  <!-- STEP 6. REMOVE THE LINE BELOW, ADD YOUR API KEY TO THE FOLLOWING LINE AND REMOVE THE COMMENT SYMBOLS-->
   <script src="https://maps.google.com/maps/api/js?v=3&libraries=places"></script>
+  <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"-->
 </head>
 
 <body onload="initMap()">
@@ -25,7 +27,7 @@
       <form id="bookForm" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdFkJEK3DSftPGEv_SGAsfWN1qyKTP2ZQQAkKPKq4dTDdn8Yw/formResponse" 
         target="hidden_iframe" onsubmit="submitted=true;">
         <div class="book-input">
-          <label for="yourname" aria-describedby="yourname_desk">Your Name</label>
+          <label for="yourname" aria-describedby="yourname_desc">Your Name</label>
           <div class="form-tip" id="yourname_desc">Anyone will be able to see this name. Be careful of what you share!</div>
           <input id="yourname" aria-label="Your Name" aria-describedby="yourname_desc" name="entry.436076865" >
         </div>
