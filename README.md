@@ -33,11 +33,13 @@ but you will need one by the time you publish the app.
 
 ## Walkthrough
 1. __Get a copy of `crowdsourced-map`__
+
 If you're familar with Git, clone this repo.
 If you're not, click _Clone or Download_, `Download ZIP`, then unzip the
 downloaded file.
 Delete the `docs` folder.
 2. __Set up your Google Form__
+
 To begin using `crowdsourced-map`, you need to set up the Google Form that will
 serve as the back-end for the app. 
 Create a new Google Form in Google Drive and add the fields you would like users
@@ -57,6 +59,7 @@ Edit Form page and unchecking the appropriate box.
 > the user will never see them.
 
 3. __Set up your Google Sheet__
+
 Once your Google Form is complete, make sure it is sending its results to
 a Google Sheet. You can find the Sheet by clicking on the _Responses_ tab of
 the Edit Form page and clicking the green Sheets icon.
@@ -72,6 +75,7 @@ In your copy of `crowdsourced-map`, add the spreadsheet ID to the
 `const spreadsheetID = ` line in `scripts/map.js`.
 
 4. __Gather your Google Form data__
+
 You will need to gather some data from your Google Form. Open your Form, and
 enter your browser's developer tools. If you're not sure how to do this,
 Google instructions for the browser you use.
@@ -88,6 +92,7 @@ be highlighted. Take a note of this URL.
 ![form response example](https://github.com/htwyford/crowdsourced-map/blob/docs/docs/form_response_example.png)
 
 5. __Input your Form data into your website__
+
 You will now use the data you gathered in step 4 to make `crowdsourced-map` come
 to life. Open your copy of `index.html`. Make the following changes:
 * On line 25, where the `<form>` element begins, replace the `action=` value with
@@ -102,6 +107,7 @@ map. That said, some map features will be disabled since you have not yet gotten
 permission (_an API key_) from Google to use the map.
 
 6. __Acquire a Google Maps API key__
+
 Follow step 1 of [Google's tutorial](https://developers.google.com/maps/documentation/javascript/get-api-key)
 on acquiring an API key.
 Once you have your API key, open `index.html`. Add your key to line 9, remove 
@@ -109,6 +115,7 @@ line 8 above, and remove the comment symbols (<!-- -->) around line 9.
 Your site is now complete!
 
 7. __Distribute your site__
+
 If you work in an environment with a systems adminstrator or IT person, give 
 them your copy of the `crowdsourced-map` folder. 
 The simplest way to distribute your site without outside help is to simply send
