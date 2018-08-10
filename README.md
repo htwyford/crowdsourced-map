@@ -105,5 +105,29 @@ map. That said, some map features will be disabled since you have not yet gotten
 permission (_an API key_) from Google to use the map.
 
 6. __Acquire a Google Maps API key__
-Follow step 1 of [Google's tutorial](https://developers.google.com/maps/documentation/javascript/get-api-key).
-Once you have your API key
+Follow step 1 of [Google's tutorial](https://developers.google.com/maps/documentation/javascript/get-api-key)
+on acquiring an API key.
+Once you have your API key, open `index.html`. Add your key to line 9, remove 
+line 8 above, and remove the comment symbols (<!-- -->) around line 9.
+
+Your site is now complete!
+
+7. __Distribute your site__
+If you work in an environment with a systems adminstrator or IT person, give 
+them your copy of the `crowdsourced-map` folder. 
+
+The simplest way to distribute your site without outside help is to simply send
+your users a copy of the `crowdsourced-map` folder. This is admittedly low-tech,
+but is useful for testing or deploying your site to very small groups of friends
+or colleagues.
+
+The easiest method to publish your site "for real" is to use GitHub Pages.
+This process begins with uploading your copy of `crowdsourced-map` to GitHub.
+A full explanation of how to do this or how to configure GitHub Pages is 
+beyond the scope of this tutorial, but GitHub offers a 
+[Help Centre](https://help.github.com/categories/github-pages-basics/)
+with instructions, and many tutorials can be found online.
+--------------
+This concludes the walkthrough. If you get stuck, or have outstanding questions,
+feel free to email me at [harry.a.twyford@gmail.com](mailto:harry.a.twyford@gmail.com). 
+I am glad to improve the quality of the code or tutorial offered here.
