@@ -110,9 +110,11 @@ permission (_an API key_) from Google to use the map.
 6. __Acquire a Google Maps API key__
 
 Follow step 1 of [Google's tutorial](https://developers.google.com/maps/documentation/javascript/get-api-key)
-on acquiring an API key.
+on acquiring an API key. You will be prompted to add referrers during the setup process.
+Add the URL of the site at which you will be hosting your map, 
+so that others cannot use your key.
 Once you have your API key, open `index.html`. Add your key to line 9, remove 
-line 8 above, and remove the comment symbols (<!-- -->) around line 9.
+line 8 above, and remove the comment symbols (arrows) around line 9.
 Your site is now complete!
 
 7. __Distribute your site__
