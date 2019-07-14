@@ -89,8 +89,8 @@ In the line of code highlighted, make a note of the value for `name=`. In the
 screenshot above, it is `entry.870886307`. Repeat this for every input on 
 the form.
 Finally, search in the developer tools inspector for `/formResponse`. A URL will
-be highlighted. Take a note of this URL.
-![form response example](https://github.com/htwyford/crowdsourced-map/blob/docs/docs/form_response_example.png)
+be highlighted. Take a note of this URL. Example:
+![form response example](https://github.com/htwyford/crowdsourced-map/blob/master/docs/form_response_example.png)
 
 5. __Input your Form data into your website__
 
@@ -134,5 +134,4 @@ with instructions, and many tutorials can be found online.
 
 
 This concludes the walkthrough. If you get stuck, or have outstanding questions,
-feel free to email me at [harry.a.twyford@gmail.com](mailto:harry.a.twyford@gmail.com). 
-I am glad to improve the quality of the code or tutorial offered here.
+feel free to email me at [harry.a.twyford@gmail.com](mailto:harry.a.twyford@gmail.com).
