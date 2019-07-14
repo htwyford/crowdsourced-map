@@ -96,9 +96,9 @@ be highlighted. Take a note of this URL. Example:
 
 You will now use the data you gathered in step 4 to make `crowdsourced-map` come
 to life. Open your copy of `index.html`. Make the following changes:
-* On line 25, where the `<form>` element begins, replace the `action=` value with
+* On line 27, where the `<form>` element begins, replace the `action=` value with
 the `/formResponse` URL you gathered in step 4.
-* Following line 25 are small repeated blocks of code, wrapped in 
+* Following line 27 are small repeated blocks of code, wrapped in 
 `<div class="book-input">` tags. Replace the `name=` value on the `<input>` tag
 in the block with the corresponding `entry.XXXXXXXXX` value you grabbed in 
 step 4. Take this take to update the text in the input's `<label>` as well.
@@ -112,7 +112,7 @@ permission (_an API key_) from Google to use the map.
 Follow step 1 of [Google's tutorial](https://developers.google.com/maps/documentation/javascript/get-api-key)
 on acquiring an API key. You will be prompted to add referrers during the setup process.
 Add the URL of the site at which you will be hosting your map, 
-so that others cannot use your key.
+so that others cannot use your key. You will need both the Javascript Maps API and the Places API.
 Once you have your API key, open `index.html`. Add your key to line 9, remove 
 line 8 above, and remove the comment symbols (arrows) around line 9.
 Your site is now complete!
