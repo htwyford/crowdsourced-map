@@ -7,7 +7,7 @@ It uses a Google Form as its backend, so you can host it anywhere you can host
 a few HTML/CSS/JS files. You can even just .zip up the project and send it
 to users.
 
-The project was originally developed for a literacy non-profit that wanted to
+The project was originally developed for a literacy non-profit that wanted
 readers to add their favourite books to a map, based on the book's setting.
 I've written a walkthrough below with someone who works at that non-profit in 
 mind: **someone who doesn't code**, and would not be comfortable setting up 
