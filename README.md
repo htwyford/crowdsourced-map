@@ -84,7 +84,7 @@ Most modern developer tools place an icon that resembles a cursor entering a box
 in the top-left corner of the window. Click that icon, and then click on one of
 the text boxes on your Form. The developer tools will highlight the code behind 
 that text box. Here is an example:
-![form cursor example](https://github.com/htwyford/crowdsourced-map/blob/master/docs/form_cursor_example.png).
+![form cursor example](https://github.com/htwyford/crowdsourced-map/blob/master/docs/form_cursor_example.png)
 In the line of code highlighted, make a note of the value for `name=`. In the 
 screenshot above, it is `entry.870886307`. Repeat this for every input on 
 the form.
